@@ -14,6 +14,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet"> 
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="style.css">
@@ -24,6 +25,18 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="off-canvas-menu">
+        <span class="menu-close"><i class="fa fa-close"></i></span>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Trend</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="off-canvas-overlay"></div>
 
         <div class="headertop-area">
           <div class="container-fluid">
@@ -55,18 +68,28 @@
 
           </div>
           </div>
-
-
         </div>
+
+
         <div class="homepage-slider-wrap">
-          <div class="homepage-slides">
-            <div class="homepage-items">
+          <div class="owl-carousel homepage-slides owl-theme">
+            <div class="homepage-items item">
               <img src="img/women.png">
                <div class="slider-text-table">
                   <div class="slider-text-tablecell">
                  <p>New</p>
                  <p><strong><i>SEASON</i></strong></p>
                  <p class="slide-alternative-color">Looks</p>
+                </div>
+              </div>
+            </div>   
+            <div class="homepage-items item">
+              <img src="img/women.png">
+               <div class="slider-text-table">
+                  <div class="slider-text-tablecell">
+                 <p>Again</p>
+                 <p><strong><i>New</i></strong></p>
+                 <p class="slide-alternative-color">Text</p>
                 </div>
               </div>
             </div>
@@ -366,8 +389,70 @@
                 </div>
               </div>
               <a class="load-more-product-btn">LOAD MORE CLOTHES</a>
-              <div class="product-promotion">
-                <div class="single-product-promotion">
+              <div class="owl-carousel product-promotion owl-theme">
+                <div class="single-product-promotion item">
+                  <div class="row">
+                    <div class="col-md-5">
+                    <div class="promo-bg">
+
+                      <img src="img/lady.png">
+
+                    </div>
+
+                    </div>
+
+                    <div class="col-md-7">
+                      <div class="promo-content">
+                          <div class="promo-title">
+                            <h2>My sample text </h2>
+                            <h2><strong>Spring/Summer</strong></h2>
+                            <span class="year-text">2015</span>
+                          </div>
+                          <p>With Seventies influences from Saturday night fever to hippy deluxe, 
+                             a khaki nod to military style alongside nautical accents, experiments 
+                             with transparency, patchworks of vintage prints and a mix & match 
+                             approach to volume and fabric, for Summer 2015 we're set to see 
+                             contrast take center stage. Stay a step ahead as we present a 
+                             round-up of the runway trends set to take Spring/Summer 2015 by storm.
+                          </p>
+                          <a class="boxed-btn">MORE</a>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="single-product-promotion item">
+                  <div class="row">
+                    <div class="col-md-5">
+                    <div class="promo-bg">
+
+                      <img src="img/lady.png">
+
+                    </div>
+
+                    </div>
+
+                    <div class="col-md-7">
+                      <div class="promo-content">
+                          <div class="promo-title">
+                            <h2>Top 20 trends for </h2>
+                            <h2><strong>Spring/Summer</strong></h2>
+                            <span class="year-text">2015</span>
+                          </div>
+                          <p>With Seventies influences from Saturday night fever to hippy deluxe, 
+                             a khaki nod to military style alongside nautical accents, experiments 
+                             with transparency, patchworks of vintage prints and a mix & match 
+                             approach to volume and fabric, for Summer 2015 we're set to see 
+                             contrast take center stage. Stay a step ahead as we present a 
+                             round-up of the runway trends set to take Spring/Summer 2015 by storm.
+                          </p>
+                          <a class="boxed-btn">MORE</a>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div> 
+                <div class="single-product-promotion item">
                   <div class="row">
                     <div class="col-md-5">
                     <div class="promo-bg">
@@ -449,6 +534,7 @@
     </script>
 	
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script>
             $('.product-list').masonry({
@@ -456,6 +542,7 @@
       });
 
     </script>
+
     <script src="js/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
